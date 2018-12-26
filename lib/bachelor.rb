@@ -1,6 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   # code here
-  season_contestants = data[season]
+  season_contestants = data[season.to_sym]
   winner = season_contestants.select {|contestant| contestant["status"] = "Winner"}
 end
 
